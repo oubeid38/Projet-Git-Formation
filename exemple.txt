@@ -1,1 +1,2 @@
 Ceci est un fichier de test 
+Ligne diff‚rente ajout‚e dans test_des_conflits 
