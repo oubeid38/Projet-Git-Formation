@@ -1,0 +1,30 @@
+cd C:\Users\USER\Desktop\Git\Projet_Git1
+move fichier_conflit.txt fichier_conflit_backup.txt
+git checkout main
+git pull origin main
+echo Ceci est un fichier de test > exemple.txt
+git add exemple.txt
+git commit -m "Ajout de exemple.txt sur main"
+git push origin main
+git checkout -b gestion_des_conflits
+echo Ligne ajoutée dans gestion_des_conflits >> exemple.txt
+git add exemple.txt
+git commit -m "Modification de exemple.txt dans gestion_des_conflits"
+git checkout main
+git checkout -b test_des_conflits
+echo Ligne différente ajoutée dans test_des_conflits >> exemple.txt
+git add exemple.txt
+git commit -m "Modification de exemple.txt dans test_des_conflits"
+git checkout main
+git merge gestion_des_conflits
+git push origin main
+git merge test_des_conflits
+REM Résoudre le conflit manuellement dans exemple.txt avec notepad
+notepad exemple.txt
+git add exemple.txt
+git commit -m "Résolution du conflit lors de la fusion de test_des_conflits"
+git push origin main
+git branch -d gestion_des_conflits
+git branch -d test_des_conflits
+git push origin --delete gestion_des_conflits
+git push origin --delete test_des_conflits
