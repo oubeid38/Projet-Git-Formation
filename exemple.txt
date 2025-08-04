@@ -1,2 +1,3 @@
-Ceci est un fichier de test 
-Ligne ajout‚e dans gestion_des_conflits 
+Ceci est un fichier de test
+Ligne ajoutée dans gestion_des_conflits
+Ligne différente ajoutée dans test_des_conflits
