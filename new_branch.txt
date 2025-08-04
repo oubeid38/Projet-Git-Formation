@@ -1,1 +1,2 @@
-La nouvelle branche dans git est pr�te 
+La nouvelle branche dans git est prˆte 
+c'est compliqué il faut voir le fichier_conflit
