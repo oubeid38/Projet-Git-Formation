@@ -11,6 +11,6 @@ jobs:
       -uses: actions/checkout@v1
 
       -name: lancer les Tests
-        run: |
-        echo "Lancement des tests... Tous les tests sont passés !"
-        echo "Le code est prêt à être déployé."
+        run:
+          echo "Lancement des tests... Tous les tests sont passés !"
+          echo "Le code est prêt à être déployé."
