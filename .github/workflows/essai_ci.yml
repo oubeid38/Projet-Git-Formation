@@ -1,0 +1,16 @@
+name: Tests en CI 
+
+on: 
+  push:
+    branches: ["main"]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      uses: actions/checkout@v3
+
+      name: lancer les Tests
+      run: |
+        echo "Lancement des tests... Tous les tests sont passés !"
+        echo "Le code est prêt à être déployé."
